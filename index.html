@@ -1,0 +1,707 @@
+<!-- lets start  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essence of Flavor Restaurant</title>
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- font awsome cdn link   -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custome cdn link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="imgs/logo.jpg" alt="Essence of Flavor Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-section" id="about-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services-section" id="services-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services-section" id="menu-link">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#order-section" id="order-link">Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section" id="contact-link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="nav-btn mt-4">
+                    <a href="" id="login-link">Login</a>
+                    <a href="" id="signup-link">Sign Up</a>
+                    <a href="" id="profile-link" style="display: none;">Profile</a>
+                    <a href="" id="cart-link"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- lets make banner  -->
+
+    <section class="banner-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">    
+                    <div class="banner-content">
+                        <h6>Welcome to Our Restaurant Essence of Flavor</h6>
+                        <h2>Dining redefined with every bite</h2>
+                        <p>Step into our world and you will experience a fascinating culinary journey, where each dish is a
+                            work of art, each flavor is a story. At Essence of Flavor, 
+                            we do not simply serve meals, but also create memorable moments, where the taste buds are awakened and the soul is sublimated.
+                        </p>
+                        <div class="nav-btn mt-4"><a href="">Order Now <i class="fa-solid fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section  -->
+
+    <section class="about-sec py-5" id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-img">
+                        <img src="imgs/about-img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <p class="title-p"><img src="imgs/p-img.png" alt="">About Us</p>
+                    <h2 class="title-h">Our Commitment to authenticity & excellence</h2>
+                    <p>At Essence of Flavor We believe that food is more than just food, it is an experience. That is why we are 
+                        committed to bringing you authentic dishes, prepared with the freshest ingredients, following 
+                        traditional recipes that have been preserved for generations. Each of our dishes
+                         is a testament to the passion and dedication of our talented chefs, who constantly strive to create unique and unforgettable flavors.
+                        </p>
+                    <p>We understand that excellence lies not only in taste, but also in 
+                        the quality of service. From the cozy, luxurious space to the dedication of our staff, we always strive to 
+                        create a perfect culinary experience for each customer. Come to Essence of Flavor to discover the culinary quintessence and feel the difference!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- now make or menus  -->
+
+    <section class="py-5 service-sec" id="services-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <p class="title-p"><img src="imgs/p-img.png" alt="">Our Services</p>
+                    <h2 class="title-h">Hot Restaurant Item List</h2>
+                    <p>Explore our signature menu</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="nav-btn float-end"><a href="" class="bg-black">Order Now <i
+                                class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box" data-price="15.00">
+                        <div class="ser-img"><img src="imgs/s-1.png" alt=""></div>
+                        <div class="ser-text">
+                            <h4>Combo Pack</h4>
+                            <p>Can't decide? Our Combo Pack has it all! A delicious medley of our most popular dishes, 
+                                perfect for sharing or indulging solo. Dive into a world of flavor with this ultimate feast.
+                            </p>
+                            <div class="ser-arr"><a href="">View full item <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box" data-price="12.00">
+                        <div class="ser-img"><img src="imgs/s-2.png" alt=""></div>
+                        <div class="ser-text">
+                            <h4>Chicken</h4>
+                            <p>Simple yet satisfying. Our perfectly cooked chicken is a testament to the beauty of classic flavors. 
+                                Tender, juicy, and oh-so-delicious, it's a dish you'll crave again and again.
+                            </p>
+                            <div class="ser-arr"><a href="">View full item <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box" data-price="14.05">
+                        <div class="ser-img"><img src="imgs/s-3.png" alt=""></div>
+                        <div class="ser-text">
+                            <h4>chipotle Chicken </h4>
+                            <p>Spice up your life with our Chipotle Chicken! Marinated in a smoky chipotle blend and grilled to perfection, 
+                                this dish packs a flavorful punch that will leave you wanting more.
+                            </p>
+                            <div class="ser-arr"><a href="">View full item <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box"data-price="20.00">
+                        <div class="ser-img"><img src="imgs/s-4.png" alt=""></div>
+                        <div class="ser-text">
+                            <h4>Tacos</h4>
+                            <p>Taco 'bout a party in your mouth! Our tacos are bursting with fresh ingredients and vibrant flavors. 
+                                From the crispy tortillas to the savory fillings, every bite is a fiesta.
+                            </p>
+                            <div class="ser-arr"><a href="">View full item <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box"data-price="16.00">
+                        <div class="ser-img"><img src="imgs/s-5.png" alt=""></div>
+                        <div class="ser-text">
+                            <h4>Pasta</h4>
+                            <p>Indulge in a comforting bowl of our homemade pasta. Made with love and the finest ingredients, 
+                                our pasta dishes are a symphony of flavors that will warm your heart and soul.
+                            </p>
+                            <div class="ser-arr"><a href="">View full item <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box"data-price="13.00">
+                        <div class="ser-img"><img src="imgs/s-6.png" alt=""></div>
+                        <div class="ser-text">
+                            <h4>Chicken Tikka</h4>
+                            <p>Embark on a culinary journey to India with our Chicken Tikka. 
+                                 Marinated in aromatic spices and grilled to perfection, this dish is a celebration of authentic Indian flavors.</p>
+                            <div class="ser-arr"><a href="">View full item <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- make another section for about  -->
+
+    <section class="py-5 bg-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-img"><img src="imgs/bg-sec.jpg" alt=""></div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <p class="title-p"><img src="imgs/p-img.png" alt="">Our Daily Offers</p>
+                    <h2 class="title-h text-white">taste the saving with our daily specials</h2>
+                    <p>
+                        Let your taste buds explode with crispy, golden fried chicken, 
+                        made with the freshest ingredients and marinated according to our special recipe. 
+                        Each piece of chicken is a perfect blend of crispy crust and tender, juicy meat inside.
+                         Enjoy our fried chicken with hot, golden fries, sure to bring you an unforgettable culinary experience.
+                        </p>
+                    <p>
+                        Not only delicious, our special fried chicken also comes with attractive daily deals, 
+                        helping you save money while still enjoying a quality meal. Come to Essence of Flavor 
+                        to discover daily deals and enjoy great culinary moments with family and friends.
+                    </p>
+
+                    <div class="nav-btn mt-4"><a href="">Read More <i class="fa-solid fa-arrow-right"></i></a></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- let make the items tabs  -->
+
+    <section class="py-5 service-tab-sec">
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <p class="title-p"><img src="imgs/p-img.png" alt="">Our Popular items</p>
+                <h2 class="title-h">Our Popular Pizza Foods</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                                aria-selected="true">All items</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Burger</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                aria-controls="contact-tab-pane" aria-selected="false">Chicken</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tacos-tab" data-bs-toggle="tab" 
+                            data-bs-target="#tacos-tab-pane" type="button" role="tab" 
+                            aria-controls="tacos-tab-pane" aria-selected="false">Tacos</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="nav-btn float-end"><a href="" class="bg-black">Order Now <i
+                                class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+            </div>
+    
+            <div class="all-the-tabs mt-5">
+                <div class="tab-content" id="myTabContent">
+                    <!-- Tab "All items" chứa tất cả các món -->
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+                        <!-- make items menus -->
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="service-tab">
+                                    <div class="ser-img"><img src="imgs/s-1.png" alt=""></div>
+                                    <div class="ser-text">
+                                        <h4>Unlimited Chicken Fry</h4>
+                                        <p>Chicken</p>
+                                        <p class="price">$13.00 <del>$18.00</del></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="service-tab">
+                                    <div class="ser-img"><img src="imgs/s-2.png" alt=""></div>
+                                    <div class="ser-text">
+                                        <h4>Double Stack Burger</h4>
+                                        <p>Burger</p>
+                                        <p class="price">$15.00 <del>$20.00</del></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="service-tab">
+                                    <div class="ser-img"><img src="imgs/s-3.png" alt=""></div>
+                                    <div class="ser-text">
+                                        <h4>Chicken Kabab</h4>
+                                        <p>Chicken</p>
+                                        <p class="price">$10.00 <del>$15.00</del></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="service-tab">
+                                    <div class="ser-img"><img src="imgs/s-4.png" alt="Veg Tacos"></div>
+                                    <div class="ser-text">
+                                        <h4>Veg Tacos</h4>
+                                        <p>Tacos</p>
+                                        <p class="price">$13.00 <del>$17.00</del></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Tab "Burger" (nội dung sẽ được tạo động) -->
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <div class="row"></div>
+                    </div>
+    
+                    <!-- Tab "Chicken" (nội dung sẽ được tạo động) -->
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">
+                        <div class="row"></div>
+                    </div>
+                    <!-- Tab "Tacos" -->
+                    <div class="tab-pane fade" id="tacos-tab-pane" role="tabpanel" aria-labelledby="taco-tab" 
+                        tabindex="0">
+                        <div class="row"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- lets make testimonials  -->
+
+    <section class="py-5 testimonial-sec">
+        <div class="container">
+            <p class="title-p justify-content-center"><img src="imgs/p-img.png" alt="">About Us</p>
+            <h2 class="title-h text-center">What People Say about us</h2>
+
+
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box">
+                        <div class="test-info">
+                            <div class="ts-img"><img src="imgs/t1.png" alt=""></div>
+                            <div class="info">
+                                <span>Aleza</span>
+                                <p>Customer</p>
+                            </div>
+                            <div class="t-icon"><img src="imgs/test-icon.png" alt=""></div>
+
+                        </div>
+                        <div class="test-txt">
+                            <p>I have been a customer of Essence of Flavor for many years and have never been disappointed. 
+                                The food is always fresh and flavorful, especially Tacos. 
+                                The restaurant space is cozy, the staff is enthusiastic and attentive. 
+                                I always feel comfortable and satisfied every time I come here. 
+                                Essence of Flavor is my top choice for family and friends meals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box">
+                        <div class="test-info">
+                            <div class="ts-img"><img src="imgs/t2.png" alt=""></div>
+                            <div class="info">
+                                <span>Marko</span>
+                                <p>Customer</p>
+                            </div>
+                            <div class="t-icon"><img src="imgs/test-icon.png" alt=""></div>
+
+                        </div>
+                        <div class="test-txt">
+                            <p>
+                                As a person with high demands on cuisine, I am really impressed with the quality of the food at Essence of Flavor. 
+                                The dishes are meticulously prepared, the ingredients are fresh, the flavors are unique. 
+                                I especially like Chicken Kabab with its rich, unforgettable flavor. 
+                                The restaurant space is luxurious, sophisticated, creating a comfortable and relaxing feeling. 
+                                I appreciate the professionalism and dedication of the staff. 
+                                Essence of Flavor deserves to be one of the top restaurants in the area.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-box">
+                        <div class="test-info">
+                            <div class="ts-img"><img src="imgs/t3.png" alt=""></div>
+                            <div class="info">
+                                <span>Joseph</span>
+                                <p>Customer</p>
+                            </div>
+                            <div class="t-icon"><img src="imgs/test-icon.png" alt=""></div>
+
+                        </div>
+                        <div class="test-txt">
+                            <p>
+                                I just came to Essence of Flavor for the first time and was really surprised by the quality of the food and service here. 
+                                The Chicken Tikka is very delicious, rich in flavor, irresistible. 
+                                The restaurant space is cozy, luxurious, creating a comfortable feeling. 
+                                The staff is enthusiastic, attentive, always ready to support customers. 
+                                I will definitely come back to Essence of Flavor and recommend it to friends and relatives.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- lets make a form  -->
+
+    <section class="py-5 request-sec" id="order-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="request-txt">
+                        <p class="title-p"><img src="imgs/p-img.png" alt="">Place the Order</p>
+                        <h2 class="title-h"> Request a Quote</h2>
+                    </div>
+                    <div class="form-banner">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-4"><input type="text" placeholder="Name"></div>
+                                <div class="col-lg-4"><input type="email" placeholder="Email"></div>
+                                <div class="col-lg-4"><input type="tel" placeholder="Phone"></div>
+                                <div class="col-lg-4"><input type="text" placeholder="Menu"></div>
+                                <div class="col-lg-4"><input type="date" placeholder="Select date"></div>
+                                <div class="col-lg-4"><input type="submit" placeholder="Submit"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="request-img"><img src="imgs/form-img.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- lets start blog  -->
+
+<section class="py-5 blog-sec">
+    <div class="container">
+        <p class="title-p"><img src="imgs/p-img.png" alt="">Blogs</p>
+        <h2 class="title-h"> Articles & Blogs</h2>
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-blog">
+                    <div class="blog-img"><img src="imgs/blog-thumb1.png" alt=""></div>
+                    <a href="" class="blog-arr"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="blog-txt mt-4">
+                        <div class="date">March 21st, 2025</div>
+                        <h3>27 High-Protein Chicken Dinner Recipes</h3>
+                        <hr>
+                        <div class="blog-read">
+                            <a href="https://www.eatingwell.com/gallery/7828514/high-protein-chicken-dinner-recipes/" target="_blank">Read More <i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-blog">
+                    <div class="blog-img"><img src="imgs/blog-thumb2.png" alt=""></div>
+                    <a href="" class="blog-arr"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="blog-txt mt-4">
+                        <div class="date">March 25st, 2025</div>
+                        <h3> Cocktail List and Recipes: Refreshing Drinks</h3>
+                        <hr>
+                        <div class="blog-read">
+                            <a href="https://www.allrecipes.com/article/top-50-cocktail-list-and-recipes/" target="_blank">Read More <i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-blog">
+                    <div class="blog-img"><img src="imgs/blog-thumb3.png" alt=""></div>
+                    <a href="" class="blog-arr"><i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="blog-txt mt-4">
+                        <div class="date">March 22st, 2025</div>
+                        <h3>30-Day High-Protein Meal Plan for Beginners</h3>
+                        <hr>
+                        <div class="blog-read">
+                            <a href="https://www.eatingwell.com/30-day-high-protein-meal-plan-for-beginners-8736907" target="_blank">Read More <i class="fa-solid fa-angle-right"></i></a>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- lets make footer sec  -->
+
+    <footer class="footer-sec py-5" id="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-img">
+                        <img src="imgs/logo.jpg" alt="">
+                        <p class="mt-3">Discover flavor and warmth at Essence of Flavor, where every dish tells a story.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-links ps-0 ps-lg-5">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i>Home</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i>About Us</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i>Menus</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i>Orders</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-links">
+                        <h4>Signature Menu</h4>
+                        <ul>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i>Chicken Tikka</a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Veg tacos </a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Lemondae </a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Burger combo </a></li>
+                            <li><a href=""><i class="fa-solid fa-angle-right"></i> Fries </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-links">
+                        <h4>Contact Info</h4>
+                    </div>
+                    
+                    <div class="cont-flex">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <div class="">
+                            <span>Address </span>
+                            <a href="">50 Phạm Hữu Chí</a>
+                        </div>
+                    </div>
+
+                    <div class="cont-flex">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="">
+                            <span>E-mail </span>
+                            <a href="">hellothere@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="cont-flex">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="">
+                            <span>Phone </span>
+                            <a href="">09345 67890</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <div class="container">
+                <a href="">@copyrights 2025 . All reserved by</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal Menu -->
+<div class="menu-modal" id="menu-modal" style="display: none;">
+    <div class="menu-modal-content">
+        <h3>Our Menu</h3>
+        <button class="close-menu-modal">Close</button>
+        <div class="menu-items">
+            <div class="menu-item" data-name="Unlimited Chicken Fry" data-price="13.00">
+                <img src="imgs/s-1.png" alt="">
+                <h4>Unlimited Chicken Fry</h4>  
+                <p>Chicken</p>
+                <p class="price">$13.00 <del>$18.00</del></p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Double Stack Burger" data-price="15.00">
+                <img src="imgs/s-2.png" alt="">
+                <h4>Double Stack Burger</h4>
+                <p>Burger</p>
+                <p class="price">$15.00 <del>$20.00</del></p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Chicken Kabab" data-price="10.00">
+                <img src="imgs/s-3.png" alt="">
+                <h4>Chicken Kabab</h4>
+                <p>Chicken</p>
+                <p class="price">$10.00 <del>$15.00</del></p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Veg Tacos" data-price="13.00">
+                <img src="imgs/s-4.png" alt="">
+                <h4>Veg Tacos</h4>
+                <p>Tacos</p>
+                <p class="price">$13.00 <del>$17.00</del></p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Registration Modal -->
+<div class="auth-modal" id="signup-modal" style="display: none;">
+    <div class="auth-modal-content">
+        <h3>Sign Up</h3>
+        <button class="close-auth-modal">Close</button>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="signup-name">Full Name</label>
+                <input type="text" id="signup-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+<!-- Login Modal -->
+<div class="auth-modal" id="login-modal" style="display: none;">
+    <div class="auth-modal-content">
+        <h3>Login</h3>
+        <button class="close-auth-modal">Close</button>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Modal Cart Page  -->
+<div class="cart-modal" id="cart-modal" style="display: none;">
+    <div class="cart-modal-content">
+        <h3>Your Cart</h3>
+        <button class="close-cart-modal">Close</button>
+        <div class="cart-items" id="cart-items">
+            <!-- The dishes will be added using JS -->
+        </div>
+        <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</div>
+
+<!-- Modal Profile -->
+<div class="profile-modal" id="profile-modal" style="display: none;">
+    <div class="profile-modal-content">
+        <h3>Your Profile</h3>
+        <button class="close-profile-modal">Close</button>
+        <div class="profile-info">
+            <p><strong>Name:</strong> <span id="profile-name">N/A</span></p>
+            <p><strong>Email:</strong> <span id="profile-email">N/A</span></p>
+            <p><strong>Order History:</strong></p>
+            <ul id="order-history">
+                <!-- Order history will be added using JS -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <!-- using js for the tab functionality  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
