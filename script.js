@@ -374,3 +374,76 @@ const contactObserver = new IntersectionObserver((entries) => {
 });
 
 contactObserver.observe(contactSection);
+
+
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Login Form
+    const loginForm = document.getElementById('login-form');
+    if (loginForm) {
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (user && user.email === email && user.password === password) {
+                alert('Login successful!');
+                document.getElementById('login-link').style.display = 'none';
+                document.getElementById('signup-link').style.display = 'none';
+                document.getElementById('profile-link').style.display = 'inline';
+                window.location.href = 'profile.html';
+            } else {
+                alert('Invalid credentials!');
+            }
+        });
+    }
+
+    // Sign Up Form
+    const signupForm = document.getElementById('signup-form');
+    if (signupForm) {
+        signupForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const user = {
+                name: document.getElementById('signup-name').value,
+                email: document.getElementById('signup-email').value,
+                password: document.getElementById('signup-password').value
+            };
+            localStorage.setItem('user', JSON.stringify(user));
+            alert('Sign up successful! Please login.');
+            window.location.href = 'login.html';
+        });
+    }
+
+    // Add to Cart
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const item = button.closest('.service-box');
+            const name = item.querySelector('h4').textContent;
+            const price = parseFloat(item.getAttribute('data-price'));
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(`${name} added to cart!`);
+        });
+    });
+
+    // Cart Page
+    const cartItems = document.getElementById('cart-items');
+    if (cartItems) {
+        cart.forEach(item => {
+            cartItems.innerHTML += `<p>${item.name} - $${item.price}</p>`;
+        });
+        const total = cart.reduce((sum, item) => sum + item.price, 0);
+        document.getElementById('cart-total').textContent = total.toFixed(2);
+    }
+
+    // Profile Page
+    if (document.getElementById('profile-name')) {
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+            document.getElementById('profile-name').textContent = user.name;
+            document.getElementById('profile-email').textContent = user.email;
+        }
+    }
+});

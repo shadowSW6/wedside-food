@@ -1246,3 +1246,78 @@ button.navbar-toggler {
         font-size: 14px;
     }
 }
+
+
+/* style.css */
+:root {
+    --gold: #d4af37;
+    --black: #1a1a1a;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: var(--black);
+}
+
+.header {
+    background-color: var(--black);
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+
+.nav-btn a:hover {
+    color: #fff !important;
+}
+
+.banner-sec {
+    background: url('imgs/banner-bg.jpg') no-repeat center/cover;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+}
+
+.btn-primary {
+    background-color: var(--gold);
+    border: none;
+    color: var(--black);
+}
+
+.service-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-box img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.price {
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.footer-sec {
+    background-color: var(--black);
+    color: var(--gold);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .banner-content h1 {
+        font-size: 1.5rem;
+    }
+}
